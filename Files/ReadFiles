@@ -1,0 +1,24 @@
+import os,glob
+
+fP = r'C:\Softwares\TALEND\Input\investpdf'
+
+#Function that read each an every file through looop statement
+def readFiles(filePath):
+    fileNames = os.listdir(filePath)
+    for filename in fileNames:
+        extension = filename.split(".")[-1]
+        print('Filename: '+filename)
+        print('extension: ' + extension)
+
+#Read list of CSV files from the directory "C:\Softwares\TALEND\Input"
+def allFiles(dir):
+    os.chdir("C:\Softwares\TALEND\Input")
+    for file in glob.glob("*.csv"):
+        print(file)
+
+
+# Main program call.
+if __name__ == '__main__':
+    readFiles(fP)
+    print('------- all Files --------')
+    allFiles(fP)

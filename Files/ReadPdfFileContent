@@ -1,0 +1,19 @@
+# import the module
+import PyPDF2
+
+# create File object of the file
+pdfFileObj = open(r'C:\Softwares\TALEND\Input\investpdf\thiru.pdf','rb')
+# here r - read and b - binary. Consider the file as binary
+
+# Read the file using the created object
+pdfReader = PyPDF2.PdfFileReader(pdfFileObj)
+
+# Print the number of pages
+print("Total number of pages:  ", pdfReader.numPages)
+print("Total number of pages:  ", pdfReader.getNumPages())
+
+# Read the content of the first page of the file
+pageObj = pdfReader.getPage(1)
+print(pageObj.extractText())
+
+pdfFileObj.close()

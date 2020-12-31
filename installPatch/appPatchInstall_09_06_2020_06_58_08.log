@@ -1,0 +1,17 @@
+[Pre-Checker] [INFO] [2020-06-09 06:58:08,833] - Operating System: Windows.
+[Pre-Checker] [INFO] [2020-06-09 06:58:08,833] - Logfile:  appPatchInstall_09_06_2020_06_58_08.log.
+[Pre-Checker] [INFO] [2020-06-09 06:58:08,833] - Loading system config properties .... .
+[Pre-Checker] [INFO] [2020-06-09 06:58:08,833] - Defined Parameters: {'jda.platform.home': "'C:/Softwares/jda/platform/config/bin'", 'jda.scpo.home': "'C:/Softwares/jda/platform/config/bin/scpoweb'", 'jda.platform.db.home': "'C:/Softwares/jda/platform/config/database/platform'", 'jda.scpo.db.home': "'C:/Softwares/jda/platform/config/database/scpoweb'", 'database.type': "'oracle'", 'db.hostname': "'in2-1022589lt1'", 'db.port': "'1521'", 'db.servicename': "'O12CR201'", 'db.usrname.scpomgr': "'SCPOMGR'", 'db.pwd.scpomgr': "'SCPOMGR'", 'db.usrname.abppmgr': "'ABPPMGR'", 'db.pwd.abppmgr': "'ABPPMGR'", 'win.app.serv1': '"OracleServiceO12CR201"', 'win.app.serv2': '"OracleOraDB12Home1TNSListener"', 'jda.cluster': '"Y"', 'patch.platform.weblogic': '"Windows_platform2019.8.2_309_weblogic.zip"', 'patch.platform.help': '"Windows_platform2019.8.2_309_help.zip"', 'patch.scpoweb.weblogic': '"Windows_scpoweb2019.8.2_309_weblogic.zip"', 'patch.scpoeweb.help': '"Windows_scpoweb2019.8.2_309_help.zip"'}.
+[Pre-Checker] [ERROR] [2020-06-09 06:58:08,833] - #ERROR[getService]# psutil.NoSuchProcess service '"OracleServiceO12CR201"' does not exist).
+[Pre-Checker] [INFO] [2020-06-09 06:58:08,833] - "OracleServiceO12CR201" service is not running..
+[Pre-Checker] [ERROR] [2020-06-09 06:58:08,833] - #ERROR[getService]# psutil.NoSuchProcess service '"OracleOraDB12Home1TNSListener"' does not exist).
+[Pre-Checker] [INFO] [2020-06-09 06:58:08,833] - "OracleOraDB12Home1TNSListener" service is not running..
+[Pre-Checker] [INFO] [2020-06-09 06:58:08,833] -  Installation files .....
+[Pre-Checker] [INFO] [2020-06-09 06:58:08,833] - "Windows_platform2019.8.2_309_weblogic.zip".
+[Pre-Checker] [INFO] [2020-06-09 06:58:08,833] - "Windows_platform2019.8.2_309_help.zip".
+[Pre-Checker] [INFO] [2020-06-09 06:58:08,849] - "Windows_scpoweb2019.8.2_309_weblogic.zip".
+[Pre-Checker] [INFO] [2020-06-09 06:58:08,849] - "Windows_scpoweb2019.8.2_309_help.zip".
+[Pre-Checker] [INFO] [2020-06-09 06:58:08,849] - Database type: 'oracle'.
+[Pre-Checker] [INFO] [2020-06-09 06:58:08,849] - Get the detail Of 'oracle' database.
+[Pre-Checker] [INFO] [2020-06-09 06:58:08,849] - Db connection String: SCPOMGR/SCPOMGR@in2-1022589lt1:1521/O12CR201.
+[Pre-Checker] [ERROR] [2020-06-09 06:58:13,474] - ORA-12541: TNS:no listener.

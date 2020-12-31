@@ -1,0 +1,33 @@
+Why is the _ _name_ _ variable used?
+-------------------------------------
+- The __name__ variable (two underscores before and after) is a special Python variable. It gets its value depending on how we execute the containing script.
+- Sometimes you write a script with functions that might be useful in other scripts as well. In Python, you can import that script as a module in another
+script.
+- Examples refer programs 'FirstModule.py and SecondModule.py'
+
+No method to find the lenth of the number:
+------------------------------------------
+If a num = 123, we can see its has 3 numbers 1,2 and 3 and its size is 3. But no method is available to find it.So we need to write custom code to
+count the elements. Refer 'ArmstrongNumber.py' program for the function to count the elements of a number.
+
+String formats
+--------------
+Three types of string formats and the examples can be found in 'String.py' file
+
+Difference between list and tuple?
+----------------------------------
+List is mutable and the value of list can be changed.
+Example:
+lst  = [1,2,3]
+lst[0] = 1.1
+print(lst)
+0/P:
+[1.1, 2, 3]
+Tuple is immutable and non of the tuple values can be changed
+Example:
+tup = (5,10,15)
+tup[0] = 2.5
+print(tup)
+o/p:
+TypeError: 'tuple' object does not support item assignment
+
