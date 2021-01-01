@@ -15,7 +15,11 @@ POSITION VARCHAR2(30)
 cur = conn.cursor()
 cur.execute(create_table_str)
 
+# Check if table created successfully or not.
 chk_table_str = """ SELECT COUNT(1) FROM USER_OBJECTS WHERE OBJECT_NAME = 'EMP'"""
 cur.execute(chk_table_str)
 cnt = cur.fetchone()  # returns a tuple
-print(str(cnt[0]) + ' Table created')
+if cnt[0] > 0:
+    print(str(cnt[0]) + ' Table created successfully!')
+else:
+    print('Table creation failed!')
