@@ -15,9 +15,11 @@ def arithmatic_operation(num1, num2,symbol):
     else:
         print("Invalid Operation")
 
+# List of operations using single function.
 
-arithmatic_operation(1,2,'+')
-arithmatic_operation(1,10,'-')
-arithmatic_operation(5,8,'*')
-arithmatic_operation(8,2,'/')
-arithmatic_operation(6,4,'%')
+
+arithmatic_operation(1, 2, '+')
+arithmatic_operation(1, 10, '-')
+arithmatic_operation(5, 8, '*')
+arithmatic_operation(8, 2, '/')
+arithmatic_operation(6, 4, '%')
