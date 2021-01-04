@@ -24,7 +24,7 @@ print('thiruna'.capitalize())
 print('THIRUNA'.title())
 
 # Ascii
-print(string.digits)
+print("Dgits: " + string.digits)
 print(string.octdigits)
 print(string.hexdigits)
 
