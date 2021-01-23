@@ -15,5 +15,6 @@ dest_dir = r'C:/GWS/pdf_files/Technical-e-Books/'
 for book in book_list:
     book_url = web_site + book + "Book/" + book + book_ext
     # print(book_url)
-    # download_ebooks(book_url)
-    download_ebooks(book_url, dest_dir)
+    # rv = download_ebooks(book_url)
+    rv = download_ebooks(book_url, dest_dir)
+    print(rv)
