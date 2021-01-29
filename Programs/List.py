@@ -2,6 +2,8 @@
  1. List is Mutable - meaning list can be altered.
  2. List takes Mutiple data types within itself
 '''
+
+"""
 names = ['Thiru','Gsg','AC','SM']
 print (names)
 
@@ -54,4 +56,16 @@ print(len(c_nums))
 
 # count functions reads the number of iteration of an element
 print(c_nums.count(9))
+"""
+from utilFile import generate_email_id, collect_details
+
+name = 'Ken Murray'
+fn = name.split()[0]
+ln = name.split()[1]
+
+emailid = generate_email_id(firstname=fn, lastname=ln)
+print(emailid)
+
+get_details = collect_details('thirunavukkarasu.arumugam@jda.com')
+print(get_details)
 

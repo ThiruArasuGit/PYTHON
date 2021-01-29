@@ -42,3 +42,32 @@ def download_csv_data(url, file_name, dest=None):
                 if chunk:
                     csvFile.write(chunk)
         return file_name + ' downloaded successfully!'
+
+
+# Get details from email-id
+def generate_email_id(firstname, lastname, domain=None):
+    if domain is not None:
+        return firstname.lower() + '.' + lastname.lower() + '@' + domain
+    else:
+        return firstname.lower() + '.' + lastname.lower() + '@blueyonder.com'
+
+
+# get details from email_id
+def collect_details(email=None):
+    if email is not None:
+        dtls = []
+        splval1 = email.split('.')[0].capitalize()
+        firstname = splval1
+        dtls.append(firstname)
+        splval2 = (email.split('.')[1]).split('@')[0].capitalize()
+        lastname = splval2
+        dtls.append(lastname)
+        domain = email.split('@')[1]
+        dtls.append(domain)
+        company = domain.split('.')[0].capitalize()
+        dtls.append(company)
+
+        return dtls
+
+    else:
+        return 'Please pass valid email id.'
