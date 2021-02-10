@@ -18,5 +18,5 @@ for (direct, sub_direct, files) in os.walk(path):
             ext = f.split('.')[-1]
             cnt[ext] += 1
 
-print(f' Converting the collection output to json format: \n {json.dumps(cnt, indent=2)}')
+print(f'Converting the collection output to json format: \n {json.dumps(cnt, indent=2)}')
 print(f'Total number of file available in the give file path {path} are: \n {sum(cnt.values())}')

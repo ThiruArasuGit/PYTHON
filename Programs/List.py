@@ -69,3 +69,26 @@ print(emailid)
 get_details = collect_details('thirunavukkarasu.arumugam@jda.com')
 print(get_details)
 
+from utilFile import get_even_nums
+import datetime
+from datetime import date
+
+lst = [1, 4, 5, 2, 7, 8, 3, 9, 6, 0]
+print(f' Largest number : {max(lst)}')
+print(f' Smallest number: {min(lst)}')
+print(f' Sorted list[Ascending order] : {sorted(lst, reverse=False)}')
+print(f' Sorted list[Descending order]: {sorted(lst, reverse=True)}')
+
+# Another method
+lst1 = [1, 4, 5, 2, 7, 8, 3, 9, 6, 0]
+lst1.sort()
+print(f'asc: {lst1}')
+lst1.sort(reverse=True)
+print(f'dsc: {lst1}')
+
+# Get even numbers
+print(f' Even numbers from the list: {get_even_nums(lst)}')
+
+today = date.today()
+dob = date(year=1987, month=6, day=7)
+print(f' Age : {today.year - dob.year} years {dob.month - today.month} months')

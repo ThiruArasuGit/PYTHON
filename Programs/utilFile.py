@@ -71,3 +71,17 @@ def collect_details(email=None):
 
     else:
         return 'Please pass valid email id.'
+
+
+def get_even_nums(in_lst):
+    ev_lst = list()
+    for i in in_lst:
+        # print(i)
+        if i > 0 and i % 2 == 0:
+            ev_lst.append(i)
+
+    return sorted(ev_lst, reverse=False)
+    # or can be return as below
+    '''ev_lst.sort(reverse=False)
+    return ev_lst
+    '''
