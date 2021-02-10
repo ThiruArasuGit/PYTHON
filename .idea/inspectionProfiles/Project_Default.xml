@@ -23,6 +23,7 @@
           <option value="win32serviceutil" />
           <option value="loadConfig" />
           <option value="Programs.dummy.null" />
+          <option value="Programs.dummy.v_xmlfile" />
         </list>
       </option>
     </inspection_tool>
