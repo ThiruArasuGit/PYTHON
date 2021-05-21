@@ -1,18 +1,44 @@
-import json
-import xmltodict
+nlist = [1, 2, 0, 3, 0, 4]
 
-xml_path = r'C:\Users\1022589\Downloads\order-cona-1.xml'
+print(nlist)
 
-with open(xml_path) as xml_file:
-    xml_dict = xmltodict.parse(xml_file.read())
-    if xml_file.closed == 'False':
-        xml_file.close()
+''' sum of min and max numbers'''
+sumOf_min_max = max(nlist) + min(nlist)
+print(f'Sum of min and max: {sumOf_min_max}')
+
+'''  Method:1 find sum of even numbers'''
+even_lst = []
+for i in range(len(nlist)):
+    if nlist[i] > 0 and nlist[i] % 2 == 0:
+        even_lst.append(nlist[i])
+
+print(f'[Method 1]Sum of even numbers: {sum(even_lst)}')
+
+'''  Method:2 find sum of even numbers'''
+eLst = []
+for i in nlist:
+    if i > 0 and i % 2 == 0:
+        eLst.append(i)
+
+print(f'[Method 2 ] Sum of even numbers: {sum(eLst)}')
+
+''' find min and max value using function'''
 
 
-json_data = json.dumps(xml_dict, indent=2)
-print(f'The json formatted file content: \n {json_data}')
-print(f'xml file closed: {xml_file.closed}')
+def min_val(x):
+    min_num = x[0]
+    for check in x:
+        if check < x[0]:
+            min_num = check
+    return min_num
 
-with open (r'C:\Users\1022589\Downloads\order-cona-1.json', 'w') as json_file:
-    json_file.write(json_data)
-    json_file.close()
+
+def max_val(x):
+    max_num = x[0]
+    for check in x:
+        if check > x[0]:
+            max_num = check
+    return max_num
+
+
+print(f' Min value: {min_val(nlist)}, Max value: {max_val(nlist)}')
